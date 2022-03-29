@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.flash{
+    background-color: red;
+    animation: bg-flash 0.3s infinite;
+}
+
+@keyframes bg-flash{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: green;
+    }
+    75%{
+        background-color: yellow;
+    }
+}
+
+#registrationForm{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 300px;
+    background-color: #999;
+    gap: 5px;
+}
+
+#registrationForm > input{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#registrationForm > label{
+    /* margin-top: 10px; */
+}
+
+button {
+    margin-top: 25px;
+    padding: 10px;
+}
